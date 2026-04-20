@@ -656,4 +656,11 @@
   
   // Body padding for fixed header
   document.body.style.paddingTop = '60px';
+  
+  // Ensure first child element (main content) takes available space for sticky footer
+  // This fixes the footer position on tool pages
+  const globalHeader = document.querySelector('.global-header');
+  if (globalHeader && globalHeader.nextElementSibling) {
+    globalHeader.nextElementSibling.style.flex = '1';
+  }
 })();
