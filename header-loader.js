@@ -340,6 +340,7 @@
         background: #172033;
         color: rgba(255,255,255,0.7);
         padding: 20px;
+        margin-top: auto;
       }
       
       .footer-container {
